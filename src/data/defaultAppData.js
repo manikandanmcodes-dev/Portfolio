@@ -158,6 +158,7 @@ export const defaultAppData = {
           "Node.js",
           "MongoDB"
         ],
+        "image": "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
         "color": "#00ffcc"
       },
       {
@@ -170,6 +171,7 @@ export const defaultAppData = {
           "D3.js",
           "Firebase"
         ],
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
         "color": "#00d4ff"
       },
       {
@@ -182,6 +184,7 @@ export const defaultAppData = {
           "React",
           "CSS"
         ],
+        "image": "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=1000",
         "color": "#ff3cac"
       },
       {
@@ -194,6 +197,7 @@ export const defaultAppData = {
           "JS",
           "GSAP"
         ],
+        "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1000",
         "color": "#b44fff"
       },
       {
@@ -205,6 +209,7 @@ export const defaultAppData = {
           "React Native",
           "Node.js"
         ],
+        "image": "https://images.unsplash.com/photo-1576091160550-217359f48f4c?auto=format&fit=crop&q=80&w=1000",
         "color": "#00ffcc"
       },
       {
@@ -217,6 +222,7 @@ export const defaultAppData = {
           "GraphQL",
           "Postgres"
         ],
+        "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1000",
         "color": "#ff3cac"
       }
     ]
