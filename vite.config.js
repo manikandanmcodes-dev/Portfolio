@@ -34,5 +34,6 @@ const localCmsPlugin = () => ({
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [react(), localCmsPlugin()],
 })

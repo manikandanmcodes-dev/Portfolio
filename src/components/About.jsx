@@ -31,7 +31,7 @@ export default function About() {
               <EditableText value={about.text2} dataPath={['about', 'text2']} />
             </p>
             <div className="about__actions">
-              <a href={about.cvLink} download className="btn btn-gradient">
+              <a href={about.cvLink?.startsWith('http') ? about.cvLink : `${import.meta.env.BASE_URL || '/'}${about.cvLink?.startsWith('/') ? about.cvLink.slice(1) : about.cvLink}`} download className="btn btn-gradient">
                 <EditableText value={about.cvText} dataPath={['about', 'cvText']} />
               </a>
               <a href={about.talkLink} className="btn btn-outline">

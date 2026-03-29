@@ -38,7 +38,7 @@ export default function EditableImage({ src, dataPath, fallback, className = '',
     >
       {src ? (
         <img 
-          src={src} 
+          src={src.startsWith('http') || src.startsWith('data:') ? src : `${import.meta.env.BASE_URL}${src.startsWith('/') ? src.slice(1) : src}`} 
           alt="Content" 
           style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
         />
