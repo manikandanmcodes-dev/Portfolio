@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium developer portfolio built with HTML, CSS, and JS." />
+    <meta name="theme-color" content="#0F172A" />
+    <title>Dev Portfolio — Creative Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="#" class="navbar__logo">
+          <span class="glow-dot"></span>
+          <span>Dev<span class="text-gradient">Portfolio</span></span>
+        </a>
+
+        <ul class="navbar__links">
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#process" class="navbar__link">Process</a></li>
+          <li><a href="#portfolio" class="navbar__link">Portfolio</a></li>
+          <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+          <li><a href="#blog" class="navbar__link">Blog</a></li>
+          <li>
+            <a href="#contact" class="btn btn-gradient navbar__cta"> Hire Me </a>
+          </li>
+        </ul>
+
+        <button class="navbar__burger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HeroCanvas -->
+      <div class="hero">
+        <div class="hero__background"></div>
+        <div class="hero__vignette"></div>
+
+        <div class="hero__content">
+          <p class="section-label">Welcome</p>
+          <h1 class="hero__title">Every Developer Starts Somewhere</h1>
+          <p class="hero__sub">
+            A blank screen and curiosity. Crafting premium digital products and seamless web experiences.
+          </p>
+          <a href="#portfolio" class="btn btn-gradient hero__cta">
+            View My Work ↓
+          </a>
+        </div>
+      </div>
+
+      <!-- About -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="about__grid">
+            <div class="about__bio">
+              <span class="section-label">About Me</span>
+              <h2>Crafting Digital Experiences That <span class="text-gradient">Leave a Mark</span></h2>
+              <div class="divider" style="margin-left: 0; margin-bottom: 1.5rem"></div>
+              <p class="about__text">
+                I'm a creative frontend developer with a passion for building cinematic, high-performance web experiences.
+                I bridge the gap between design and engineering — turning complex ideas into smooth, beautiful products
+                that users remember.
+              </p>
+              <p class="about__text">
+                From scroll-driven storytelling to glassmorphic interfaces, I obsess over every pixel,
+                animation easing, and interaction detail.
+              </p>
+              <div class="about__actions">
+                <a href="#" class="btn btn-gradient">Download CV ↓</a>
+                <a href="#contact" class="btn btn-outline">Let's Talk</a>
+              </div>
+            </div>
+
+            <div class="about__skills">
+              <div class="about__skill">
+                <div class="about__skill-header">
+                  <span>React & Next.js</span><span class="text-gold">95%</span>
+                </div>
+                <div class="about__skill-bar">
+                  <div class="about__skill-fill" style="--pct: 95%;"></div>
+                </div>
+              </div>
+              <div class="about__skill">
+                <div class="about__skill-header">
+                  <span>UI/UX Design</span><span class="text-gold">88%</span>
+                </div>
+                <div class="about__skill-bar">
+                  <div class="about__skill-fill" style="--pct: 88%;"></div>
+                </div>
+              </div>
+              <div class="about__skill">
+                <div class="about__skill-header">
+                  <span>Node.js & APIs</span><span class="text-gold">82%</span>
+                </div>
+                <div class="about__skill-bar">
+                  <div class="about__skill-fill" style="--pct: 82%;"></div>
+                </div>
+              </div>
+              <div class="about__skill">
+                <div class="about__skill-header">
+                  <span>Performance Opt.</span><span class="text-gold">90%</span>
+                </div>
+                <div class="about__skill-bar">
+                  <div class="about__skill-fill" style="--pct: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="what-i-do" id="services">
+            <div class="section-header">
+              <span class="section-label">Services</span>
+              <h2>What I Do</h2>
+              <div class="divider"></div>
+              <p>A complete suite of creative and technical services to bring your vision to life.</p>
+            </div>
+            <div class="what-i-do__grid">
+              <div class="glass-card what-i-do__card">
+                <div class="what-i-do__icon">⬡</div>
+                <h3>Web Development</h3>
+                <p>Pixel-perfect, performant web applications built with modern architecture and clean code.</p>
+              </div>
+              <div class="glass-card what-i-do__card">
+                <div class="what-i-do__icon">◈</div>
+                <h3>UI/UX Design</h3>
+                <p>Translating ideas into refined digital experiences with premium aesthetics and intuitive flows.</p>
+              </div>
+              <div class="glass-card what-i-do__card">
+                <div class="what-i-do__icon">⬡</div>
+                <h3>Backend & APIs</h3>
+                <p>Scalable services, REST & GraphQL APIs, and database design for robust applications.</p>
+              </div>
+              <div class="glass-card what-i-do__card">
+                <div class="what-i-do__icon">◆</div>
+                <h3>Optimization</h3>
+                <p>Lighthouse 100 scores, Core Web Vitals tuning, and performance-first development practices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WorkProcess -->
+      <section class="section work-process" id="process">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">How I Work</span>
+            <h2>The Process</h2>
+            <div class="divider"></div>
+            <p>A refined four-step methodology that transforms ideas into polished digital realities.</p>
+          </div>
+
+          <div class="process__timeline">
+            <div class="process__step glass-card">
+              <div class="process__num">01</div>
+              <div class="process__content">
+                <h3>Research & Discovery</h3>
+                <p>Deep-dive into your goals, audience, and competition to define a crystal-clear direction.</p>
+              </div>
+              <div class="process__connector"></div>
+            </div>
+            <div class="process__step glass-card process__step--right">
+              <div class="process__num">02</div>
+              <div class="process__content">
+                <h3>Design & Prototyping</h3>
+                <p>Wireframes evolve into high-fidelity prototypes with luxury aesthetics and intuitive UX.</p>
+              </div>
+              <div class="process__connector"></div>
+            </div>
+            <div class="process__step glass-card">
+              <div class="process__num">03</div>
+              <div class="process__content">
+                <h3>Develop & Engineer</h3>
+                <p>Clean, performant code built with best practices, accessibility, and scale in mind.</p>
+              </div>
+              <div class="process__connector"></div>
+            </div>
+            <div class="process__step glass-card process__step--right">
+              <div class="process__num">04</div>
+              <div class="process__content">
+                <h3>Deploy & Optimise</h3>
+                <p>Production-grade deployments, Lighthouse audits, and continuous performance tuning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Selected Work</span>
+            <h2>Portfolio</h2>
+            <div class="divider"></div>
+            <p>A curated collection of projects that showcase creativity, engineering, and craft.</p>
+          </div>
+
+          <div class="portfolio__grid">
+            <div class="glass-card portfolio__card" style="--accent: #D4AF37;">
+              <div class="portfolio__thumb">
+                <div class="portfolio__thumb-inner" style="background: linear-gradient(135deg, #D4AF3722, #D4AF3708);">
+                  <span class="portfolio__num">01</span>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3>Luminary — Luxury E-Commerce</h3>
+                <p>Full-stack e-commerce with scroll-driven animations, custom cart, and seamless checkout.</p>
+                <div class="portfolio__tags">
+                  <span class="portfolio__tag">React</span>
+                  <span class="portfolio__tag">Node.js</span>
+                  <span class="portfolio__tag">MongoDB</span>
+                </div>
+                <a href="#" class="btn btn-ghost portfolio__btn">View Project →</a>
+              </div>
+            </div>
+            <div class="glass-card portfolio__card" style="--accent: #8B5CF6;">
+              <div class="portfolio__thumb">
+                <div class="portfolio__thumb-inner" style="background: linear-gradient(135deg, #8B5CF622, #8B5CF608);">
+                  <span class="portfolio__num">02</span>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3>Scrollrift — Storytelling Platform</h3>
+                <p>Award-winning scrollytelling website built with HTML5 Canvas and vanilla JavaScript.</p>
+                <div class="portfolio__tags">
+                  <span class="portfolio__tag">Canvas</span>
+                  <span class="portfolio__tag">JS</span>
+                  <span class="portfolio__tag">GSAP</span>
+                </div>
+                <a href="#" class="btn btn-ghost portfolio__btn">View Project →</a>
+              </div>
+            </div>
+            <div class="glass-card portfolio__card" style="--accent: #06B6D4;">
+              <div class="portfolio__thumb">
+                <div class="portfolio__thumb-inner" style="background: linear-gradient(135deg, #06B6D422, #06B6D408);">
+                  <span class="portfolio__num">03</span>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3>Apex Analytics Dashboard</h3>
+                <p>Real-time SaaS dashboard with D3.js charts, dark theme, and responsive data grid.</p>
+                <div class="portfolio__tags">
+                  <span class="portfolio__tag">React</span>
+                  <span class="portfolio__tag">D3.js</span>
+                  <span class="portfolio__tag">Firebase</span>
+                </div>
+                <a href="#" class="btn btn-ghost portfolio__btn">View Project →</a>
+              </div>
+            </div>
+            <div class="glass-card portfolio__card" style="--accent: #F59E0B;">
+              <div class="portfolio__thumb">
+                <div class="portfolio__thumb-inner" style="background: linear-gradient(135deg, #F59E0B22, #F59E0B08);">
+                  <span class="portfolio__num">04</span>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3>Prism — Brand Identity System</h3>
+                <p>End-to-end brand identity and website for a creative agency. Won 3 design awards.</p>
+                <div class="portfolio__tags">
+                  <span class="portfolio__tag">Design</span>
+                  <span class="portfolio__tag">HTML</span>
+                  <span class="portfolio__tag">CSS</span>
+                </div>
+                <a href="#" class="btn btn-ghost portfolio__btn">View Project →</a>
+              </div>
+            </div>
+            <div class="glass-card portfolio__card" style="--accent: #10B981;">
+              <div class="portfolio__thumb">
+                <div class="portfolio__thumb-inner" style="background: linear-gradient(135deg, #10B98122, #10B98108);">
+                  <span class="portfolio__num">05</span>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3>PulseHealth — Medical App</h3>
+                <p>Patient dashboard with appointment scheduling, tele-health, and health metrics tracking.</p>
+                <div class="portfolio__tags">
+                  <span class="portfolio__tag">JS</span>
+                  <span class="portfolio__tag">Node.js</span>
+                </div>
+                <a href="#" class="btn btn-ghost portfolio__btn">View Project →</a>
+              </div>
+            </div>
+            <div class="glass-card portfolio__card" style="--accent: #EC4899;">
+              <div class="portfolio__thumb">
+                <div class="portfolio__thumb-inner" style="background: linear-gradient(135deg, #EC489922, #EC489908);">
+                  <span class="portfolio__num">06</span>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3>NovaCMS — Headless CMS</h3>
+                <p>Lightning-fast headless CMS with custom admin panel and REST + GraphQL API.</p>
+                <div class="portfolio__tags">
+                  <span class="portfolio__tag">JS</span>
+                  <span class="portfolio__tag">GraphQL</span>
+                  <span class="portfolio__tag">Postgres</span>
+                </div>
+                <a href="#" class="btn btn-ghost portfolio__btn">View Project →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Social Proof</span>
+            <h2>What Clients Say</h2>
+            <div class="divider"></div>
+            <p>Words from the people I've had the privilege of building for.</p>
+          </div>
+
+          <div class="testimonials__grid">
+            <div class="glass-card testimonials__card">
+              <div class="testimonials__quote-icon">"</div>
+              <p class="testimonials__quote">Working with this developer was a game-changer. The attention to UI detail and performance is on another level. Our Lighthouse score went from 62 to 99 overnight.</p>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">AM</div>
+                <div>
+                  <strong class="text-gold">Arjun Mehta</strong>
+                  <p class="text-muted" style="font-size: 0.8rem;">CTO, TechNova Labs</p>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card testimonials__card testimonials__card--featured">
+              <div class="testimonials__quote-icon">"</div>
+              <p class="testimonials__quote">The scrollytelling website he built for our brand won us a CSS Design Award within 2 weeks of launch. Pure craft and cinematic execution.</p>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">SL</div>
+                <div>
+                  <strong class="text-gold">Sophie Laurent</strong>
+                  <p class="text-muted" style="font-size: 0.8rem;">Founder, Lumière Studio</p>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card testimonials__card">
+              <div class="testimonials__quote-icon">"</div>
+              <p class="testimonials__quote">From architecture to the smallest hover animation — every detail was thoughtfully considered. The dashboard he built our team still rave about daily.</p>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">MC</div>
+                <div>
+                  <strong class="text-gold">Marcus Chen</strong>
+                  <p class="text-muted" style="font-size: 0.8rem;">Product Lead, Apex Analytics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="section blog" id="blog">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Writing</span>
+            <h2>Blog</h2>
+            <div class="divider"></div>
+            <p>Thoughts on craft, performance, and building things that matter.</p>
+          </div>
+
+          <div class="blog__grid">
+            <div class="glass-card blog__card" style="--accent: #D4AF37;">
+              <div class="blog__header">
+                <span class="blog__tag" style="color: #D4AF37; border-color: #D4AF3744;">Performance</span>
+                <span class="blog__date text-muted">Mar 2026</span>
+              </div>
+              <div class="blog__num">01</div>
+              <h3 class="blog__title">Achieving Lighthouse 100: A Practical Guide</h3>
+              <p class="blog__excerpt">Everything I learned from squeezing every point out of Core Web Vitals — from image optimisation to critical CSS.</p>
+              <a href="#" class="blog__read">Read More →</a>
+            </div>
+            <div class="glass-card blog__card" style="--accent: #8B5CF6;">
+              <div class="blog__header">
+                <span class="blog__tag" style="color: #8B5CF6; border-color: #8B5CF644;">Canvas & Animation</span>
+                <span class="blog__date text-muted">Feb 2026</span>
+              </div>
+              <div class="blog__num">02</div>
+              <h3 class="blog__title">Building Cinematic Scroll Experiences with HTML5 Canvas</h3>
+              <p class="blog__excerpt">How I built the scroll-linked image sequence you just scrolled through — frame loading, lerp, and requestAnimationFrame.</p>
+              <a href="#" class="blog__read">Read More →</a>
+            </div>
+            <div class="glass-card blog__card" style="--accent: #06B6D4;">
+              <div class="blog__header">
+                <span class="blog__tag" style="color: #06B6D4; border-color: #06B6D444;">Design Systems</span>
+                <span class="blog__date text-muted">Jan 2026</span>
+              </div>
+              <div class="blog__num">03</div>
+              <h3 class="blog__title">The Glassmorphism Design System I Use on Every Project</h3>
+              <p class="blog__excerpt">My reusable CSS token system for dark, premium UIs — colour, glass cards, typography, and spacing in one file.</p>
+              <a href="#" class="blog__read">Read More →</a>
+            </div>
+          </div>
+
+          <div class="cta-banner glass-card">
+            <h2>Let's Build Something <span class="text-gradient">Exceptional</span></h2>
+            <p>Whether you have a project brief or just an idea — I'd love to hear it.</p>
+            <a href="#contact" class="btn btn-gradient">Start a Conversation</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Get In Touch</span>
+            <h2>Contact</h2>
+            <div class="divider"></div>
+            <p>Have a project in mind? Let's make it exceptional together.</p>
+          </div>
+
+          <div class="contact__grid">
+            <div class="contact__info">
+              <div class="glass-card contact__info-card">
+                <h3>Let's collaborate</h3>
+                <p>I'm available for freelance projects, consulting, and full-time opportunities. Drop me a message and I'll get back within 24 hours.</p>
+                <a href="mailto:hello@devportfolio.io" class="contact__email">hello@devportfolio.io</a>
+                <div class="contact__socials">
+                  <a href="#" class="contact__social-link" aria-label="GitHub"><span>⬡</span></a>
+                  <a href="#" class="contact__social-link" aria-label="LinkedIn"><span>◆</span></a>
+                  <a href="#" class="contact__social-link" aria-label="Twitter"><span>●</span></a>
+                  <a href="#" class="contact__social-link" aria-label="Dribbble"><span>◈</span></a>
+                </div>
+              </div>
+            </div>
+
+            <form class="glass-card contact__form">
+              <div class="contact__field">
+                <label for="contact-name">Your Name</label>
+                <input id="contact-name" type="text" name="name" required placeholder="John Doe" />
+              </div>
+              <div class="contact__field">
+                <label for="contact-email">Email Address</label>
+                <input id="contact-email" type="email" name="email" required placeholder="john@example.com" />
+              </div>
+              <div class="contact__field">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" required rows="5" placeholder="Tell me about your project…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient contact__submit">Send Message →</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__gradient-line"></div>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <a href="#" class="footer__logo">
+              <span class="glow-dot"></span>
+              Dev<span class="text-gradient">Portfolio</span>
+            </a>
+            <p class="footer__tagline">Building cinematic digital experiences,<br />one pixel at a time.</p>
+          </div>
+
+          <nav class="footer__nav">
+            <a href="#about" class="footer__link">About</a>
+            <a href="#process" class="footer__link">Process</a>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+            <a href="#blog" class="footer__link">Blog</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© 2026 DevPortfolio. All rights reserved.</span>
+          <span class="footer__credit">Crafted with HTML, CSS & JS</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.edit-toggle-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+}
+
+.edit-toggle-btn {
+  background: var(--glass-bg, rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.2));
+  color: var(--text-main, #fff);
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-family: var(--font-head, sans-serif);
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.edit-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--neon-cyan, #00ffcc);
+}
+
+.edit-toggle-btn.active {
+  background: var(--neon-purple, #b44fff);
+  border-color: transparent;
+  box-shadow: 0 0 20px rgba(180, 79, 255, 0.5);
+}
+
+.edit-toggle-icon {
+  font-size: 1.1rem;
+}
